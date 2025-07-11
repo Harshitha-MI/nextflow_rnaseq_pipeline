@@ -50,10 +50,7 @@ tar xvfz chrX_data.tar.gz
 ```
 nextflow_rnaseq_pipeline/
 ├── rnaseq.nf              # Main Nextflow pipeline script
-├── nextflow.config        # Pipeline configuration
-├── bin/                   # Helper shell scripts (optional)
 ├── environment.yml        # Conda environment file
-├── results/               # Output folder
 └── README.md              # This file
 ```
 
@@ -62,24 +59,14 @@ nextflow_rnaseq_pipeline/
 ## 🧬 Dependencies
 
 - [Nextflow](https://www.nextflow.io/)
-- FastQC
 - Trim Galore
+- FastQC
+- MultiQC
 - STAR
 - FeatureCounts (planned)
-- MultiQC
 - SAMtools
 
 > All tools above can be installed automatically using the included `environment.yml` file.
-
----
-
-## 🚀 Example Command
-
-```bash
-nextflow run rnaseq.nf \
-  --reads 'data/*_R{1,2}.fastq.gz' \
-  --outdir results/
-```
 
 ---
 
