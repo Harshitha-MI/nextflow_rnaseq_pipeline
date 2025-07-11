@@ -1,0 +1,13 @@
+name: rnaseq_env
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - fastqc
+  - trim-galore
+  - star
+  - subread        # includes FeatureCounts
+  - multiqc
+  - samtools
