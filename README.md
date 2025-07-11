@@ -7,12 +7,11 @@ The workflow automates quality control, trimming, genome indexing, and read alig
 
 ## 🧪 Current Workflow Status
 
-✅ Step 1: Quality control with **FastQC**  
-✅ Step 2: Adapter trimming with **Trim Galore**  
+✅ Step 1: Adapter trimming with **Trim Galore**  
+✅ Step 2: Quality control with **FastQC + MultiQC** (combined in a single QC step)  
 ✅ Step 3: STAR genome indexing (tested locally)  
 ⏳ Step 4: STAR alignment (pending; planned to run on EC2 instance)  
-🔜 Step 5: Read quantification using **FeatureCounts**  
-🔜 Step 6: Summary report with **MultiQC**
+🔜 Step 5: Read quantification using **FeatureCounts**
 
 > 💡 I successfully tested the pipeline up to the STAR genome indexing step on my local machine.  
 > However, I did not get any successful alignments locally, likely due to computational limitations.  
